@@ -6,7 +6,7 @@
     <title>只是一个框子</title>
     <style>
         body{
-            background: #1f88cb;
+            background: #0099cc;
         }
         .box{
             position: relative;    /*父级div设置relative */
@@ -17,8 +17,7 @@
             background: #d9e3e8;
 
         }
-        .box_top,
-        .box_bottom{
+        .box_top , .box_bottom{
             /*父级div设置relative，子级div设置absolute ，即可使用left，right，top，bottom*/
             position: absolute;     
             width:100%;
@@ -35,7 +34,7 @@
             border-radius: 0px 0px 10px 10px;
         }
         .box_top a , .box_bottom a {
-            font-size: 26px;
+            font-size: 28px;
             line-height: 50px;
             color: white;
             text-decoration: none;  /*去掉链接下划线*/   
@@ -45,8 +44,12 @@
             top:80px;
             width:100%;
             text-align: center;
+            /* background: yellow;  */
+        }
+        .box_mid a {
             font-size: 20px;
-            /* background: red; */
+            color: blue;
+            text-decoration: none;  /*去掉链接下划线*/  
         }
     </style>
 </head>
@@ -56,10 +59,10 @@
             <a>标 题</a> 
         </div>
         <div class='box_mid'>
-            <a href="https://pengjenas.github.io/vipvideo/" target="_blank">VIP视频解析</a>
+            <a href="https://pengjenas.github.io/vipvideo/" target="_blank"> 🔗 VIP视频解析  </a>
         </div>
         <div class='box_bottom'>
-            <a href="#">- Home -</a>
+            <a href="#">🏠 Home</a>
             <!-- target="_blank -->
         </div>
     </div>

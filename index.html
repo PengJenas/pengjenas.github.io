@@ -1,70 +1,72 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>只是一个框子</title>
-    <style>
-        body{
-            background: #0099cc;
-        }
-        .box{
-            position: relative;    /*父级div设置relative */
-            width:500px;
-            height:400px;
-            margin: 100px auto;    /*上外边距150px,左右居中 */
-            border-radius: 10px;    /* 圆角 */
-            background: #d9e3e8;
+<html lang="zh">
 
+<head>
+    <meta charset="utf-8">
+    <title>Jenas</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #0099cc;
         }
-        .box_top , .box_bottom{
-            /*父级div设置relative，子级div设置absolute ，即可使用left，right，top，bottom*/
-            position: absolute;     
-            width:100%;
-            height:50px;
-            background: #093f63;
-            text-align: center;
+        .box {
+            position: relative;
+            width: 80%;
+            margin: 50px auto;
+            background: #d9e3e8;
         }
-        .box_top{
-            top:0;
-            border-radius: 10px 10px 0px 0px;
-        }
-        .box_bottom{
-            bottom:0;
-            border-radius: 0px 0px 10px 10px;
-        }
-        .box_top a , .box_bottom a {
-            font-size: 28px;
-            line-height: 50px;
-            color: white;
-            text-decoration: none;  /*去掉链接下划线*/   
-        }
-        .box_mid{
+        .nav ul {
             position: absolute;
-            top:80px;
-            width:100%;
-            text-align: center;
-            /* background: yellow;  */
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+            width: 100%;
         }
-        .box_mid a {
-            font-size: 20px;
-            color: blue;
-            text-decoration: none;  /*去掉链接下划线*/  
+        .nav li {
+            float: left;
+        }
+        .nav li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        .nav li a:hover:not(.home) {
+            background-color: #666;
+        }
+        .home {
+            background-color: green;
         }
     </style>
 </head>
+
 <body>
-    <div class='box'>
-        <div class='box_top'>
-            <a>标 题</a> 
+
+    <div class="box">
+        <div class="nav">
+            <ul>
+                <li><a class="home" href="#home">主页</a></li>
+                <li><a href="#news">空链</a></li>
+                <li><a href="https://pengjenas.github.io/vipvideo/" target="_blank">视频解析</a></li>
+                <li><a href="https://github.com/PengJenas/pengjenas.github.io" target="_blank">Github</a></li>
+            </ul>
         </div>
-        <div class='box_mid'>
-            <a href="https://pengjenas.github.io/vipvideo/" target="_blank"> 🔗 VIP视频解析  </a>
-        </div>
-        <div class='box_bottom'>
-            <a href="#">🏠 Home</a>
-            <!-- target="_blank -->
+
+        <div style="padding:60px;">
+            <br />
+            <h1>什么都没有..</h1>
+            <h2>什么都没有..</h2>
+            <h3>什么都没有..</h3>
+            <h4>什么都没有..</h4>
+            <h5>什么都没有..</h5>
+            <br />
+
         </div>
     </div>
 </body>
+
 </html>
